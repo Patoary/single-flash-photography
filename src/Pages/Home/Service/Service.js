@@ -13,7 +13,7 @@ const Service = ({service}) => {
         {detail}
         <h3>{price}</h3>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="dark">Book Now</Button>
       </Card.Body>
     </Card>
         </div>
