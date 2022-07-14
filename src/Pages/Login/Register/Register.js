@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 import {Form,Button} from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -6,6 +6,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 const Register = () => {
+    const [agree, setAgerr] = useState(false);
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -44,10 +45,14 @@ const Register = () => {
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Accept all terms and conditions" />
+            <Form.Group className="mb-3"   controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" onClick={() => setAgerr(!agree)} className={` ${agree ? '' : 'text-danger'}`} label="Accept all terms and conditions" />
             </Form.Group>
-            <Button className='submit-btn' variant="border-0 d-block mx-auto mb-2" type="submit">
+            <Button
+            disabled={!agree}
+            className='submit-btn'
+             variant="border-0 d-block mx-auto mb-2"
+              type="submit">
                 Submit
             </Button>
         </Form>
