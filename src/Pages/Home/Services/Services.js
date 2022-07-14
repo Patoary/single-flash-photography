@@ -3,6 +3,7 @@ import Service from '../Service/Service';
 import service1 from '../../../images/wedding/3.jpg';
 import service2 from '../../../images/short-film.jpg';
 import service3 from '../../../images//travel-guide.jpg';
+import Footer from '../../Shared/Footer/Footer';
 
 
 const services = [
@@ -31,6 +32,7 @@ const services = [
 ]
 const Services = () => {
     return (
+        <>
         <div className='container mb-5'>
             <h3 className='text-center p-2 mt-5 text-white fs-1'>My Services</h3>
             <div className="row">
@@ -42,6 +44,10 @@ const Services = () => {
                 }
             </div>
         </div>
+        <div>
+                <Footer></Footer>
+            </div>
+        </>
     );
 };
 

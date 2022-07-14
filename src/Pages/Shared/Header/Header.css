@@ -38,7 +38,7 @@
 
 .home,
 .contact,
-.service,
+.services,
 .about,
 .login,
 .signout {
@@ -90,7 +90,7 @@
     .home,
     .about,
     .contact,
-    .service,
+    .services,
     .login,
     .signout {
         color: white;

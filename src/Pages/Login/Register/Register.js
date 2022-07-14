@@ -27,13 +27,8 @@ const Register = () => {
         // const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
         createUserWithEmailAndPassword(email,password)
-
-        console.log('hi')
-        navigate('/home')
-
-        
+        navigate('/home')   
     }
 
     return (
@@ -50,7 +45,7 @@ const Register = () => {
                 <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
+                <Form.Check type="checkbox" label="Accept all terms and conditions" />
             </Form.Group>
             <Button className='submit-btn' variant="border-0 d-block mx-auto mb-2" type="submit">
                 Submit
