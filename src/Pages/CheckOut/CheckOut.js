@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../Shared/Footer/Footer';
-
 const CheckOut = () => {
     return (
         <>
@@ -8,9 +6,7 @@ const CheckOut = () => {
           Please Checkout your booking  
         </div>
 
-         <div className='fixed-bottom'>
-                <Footer></Footer>
-            </div>
+        
         </>
     );
 };

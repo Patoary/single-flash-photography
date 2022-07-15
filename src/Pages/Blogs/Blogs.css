@@ -1,0 +1,10 @@
+.blog{
+    margin-top: 100px;
+    padding: 50px;
+}
+.blog h3{
+    color: aqua;
+}
+.blog p{
+    color: rgb(223, 214, 177);
+}

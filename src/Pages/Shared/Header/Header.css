@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: transparent;
+    height: 75px;
     color: white;
     height: 0;
     padding: 0;
@@ -29,6 +29,7 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    /* background-color: black; */
     width: 75%;
 }
 .nav-links a:hover{
@@ -41,6 +42,7 @@
 .services,
 .about,
 .login,
+.blogs,
 .signout {
     text-decoration: none;
     font-size: 20px;
@@ -50,17 +52,12 @@
     cursor: pointer;
 }
 
-.login {
-    border: 1px solid yellow;
-    border-radius: 5px;
-}
-
 .mobile-menu-icon {
     display: none;
 
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:720px) {
     .logo {
         display: flex;
         margin-top: 15px;
@@ -92,6 +89,7 @@
     .contact,
     .services,
     .login,
+    .blogs,
     .signout {
         color: white;
         text-align: center;

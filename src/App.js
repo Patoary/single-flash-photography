@@ -11,6 +11,8 @@ import Register from './Pages/Login/Register/Register';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import Footer from './Pages/Shared/Footer/Footer';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/checkout' element={
@@ -33,6 +36,7 @@ function App() {
         ></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

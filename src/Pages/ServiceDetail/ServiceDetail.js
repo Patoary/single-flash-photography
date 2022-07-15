@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Footer from '../Shared/Footer/Footer';
-
 const ServiceDetail = () => {
     const {serviceId} = useParams();
     return (
@@ -12,10 +10,6 @@ const ServiceDetail = () => {
                 <button className='submit-btn p-2 rounded'>Checkout</button>
                 </Link>
             </div>
-            <div className='fixed-bottom'>
-                <Footer></Footer>
-            </div>
-            
         </div>
     );
 };
